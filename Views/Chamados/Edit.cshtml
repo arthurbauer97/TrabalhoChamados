@@ -1,0 +1,87 @@
+<div class="form-horizontal">
+    <form action="Edit" method="Post">
+
+          <div class="form-group">
+            <label>Id</label>
+            <input  class="form-control"
+                    type="text"
+                    name="id"
+                    value="@Model.id" readonly/>
+        </div>
+
+        <div class="form-group">
+            <label>Numero Chamado</label>
+            <input  class="form-control"
+                    type="text"
+                    name="numerochamado"
+                    value="@Model.numerochamado" />
+        </div>
+
+        <div class="form-group">
+            <label>Data</label>
+            <input  class="form-control"
+                    type="date" 
+                    name="data"
+                    value="@Model.data"/>
+        </div>
+        <div class="form-group">
+            <label>Nome do Solicitante</label>
+            <input  class="form-control"
+                    type="text" 
+                    name="nomesolicitante"
+                    value="@Model.nomesolicitante"/>
+        </div>
+
+          <div class="form-group">
+            <label>Telefone</label>
+            <input  class="form-control"
+                    type="text" 
+                    name="telefone"
+                    value="@Model.telefone"/>
+        </div>
+
+          <div class="form-group">
+            <label>E-Mail</label>
+            <input  class="form-control"
+                    type="text" 
+                    name="email"
+                    value="@Model.email"/>
+        </div>
+
+          <div class="form-group">
+            <label>Descrição do Problema</label>
+            <input  class="form-control"
+                    type="text" 
+                    name="descricao"
+                    value="@Model.descricao"/>
+        </div>
+
+          <div class="form-group">
+            <label>Solução Data</label>
+            <input  class="form-control"
+                    type="date" 
+                    name="datasolucao"
+                    value="@Model.datasolucao"/>
+        </div>
+
+          <div class="form-group">
+            <label>Hora Inicio</label>
+            <input  class="form-control"
+                    type="time" 
+                    name="horainicio"
+                    value="@Model.horainicio"/>
+        </div>
+
+          <div class="form-group">
+            <label>Hora Final</label>
+            <input  class="form-control"
+                    type="time" 
+                    name="horafinal"
+                    value="@Model.horafinal"/>
+        </div>
+
+        <input  class="btn btn-primary" 
+                type="submit" value="Salvar"/>
+
+    </form>
+</div>

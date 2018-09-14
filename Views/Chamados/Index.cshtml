@@ -1,0 +1,34 @@
+</br></br>
+<a href="Chamados/Create" class="btn btn-primary">Novo Chamado</a>
+</br></br>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <!-- <th>Numero Chamado</th> -->
+                <th>Nome Solicitante</th>
+                <th>Data</th>
+                <th>Duração</th>
+            </tr>
+            </tr>
+        </thead>
+
+        @foreach(var item in Model)
+        {
+            <tr>
+                
+                <!-- <td>@item.numerochamado</td> -->
+                <td>@item.nomesolicitante</td>
+                <td>@item.data.ToString("dd/MM/yyyy")</td>
+                <td>@item.duracao</td>
+
+          
+
+                <td><a class="btn btn-danger" href="Chamados/Delete/@item.id">Delete</a> </td>
+                <td><a class="btn btn-primary" href="Chamados/Edit/@item.id">Editar</a> </td>
+            </tr>
+        }
+    </table>
+</div>
