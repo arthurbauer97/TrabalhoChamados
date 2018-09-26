@@ -31,7 +31,9 @@ namespace TrabalhoChamados
             services.AddDbContext<DataContext>(x=>
                 x.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
             
-            services.AddScoped<IChamadosRepository,ChamadosRepository>();
+            services.AddScoped<IChamadoRepository,ChamadoRepository>();
+            services.AddScoped<IClienteRepository,ClienteRepository>();
+            services.AddScoped<ISituacaoRepository,SituacaoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

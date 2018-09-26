@@ -1,20 +1,20 @@
 <div class="form-horizontal">
     <form action="Edit" method="Post">
 
-          <div class="form-group">
-            <label>Id</label>
-            <input  class="form-control"
-                    type="text"
-                    name="id"
-                    value="@Model.id" readonly/>
-        </div>
 
         <div class="form-group">
-            <label>Numero Chamado</label>
+            <label>Id</label>
+            <input hidden class="form-control"
+                    type="text"
+                    name="id"
+                    value="@Model.id" />
+        </div>
+      <div class="form-group">
+            <label>Nome Solicitante</label>
             <input  class="form-control"
                     type="text"
-                    name="numerochamado"
-                    value="@Model.numerochamado" />
+                    name="nomesolicitante"
+                    value="@Model.nomesolicitante" />
         </div>
 
         <div class="form-group">
@@ -24,29 +24,7 @@
                     name="data"
                     value="@Model.data"/>
         </div>
-        <div class="form-group">
-            <label>Nome do Solicitante</label>
-            <input  class="form-control"
-                    type="text" 
-                    name="nomesolicitante"
-                    value="@Model.nomesolicitante"/>
-        </div>
-
-          <div class="form-group">
-            <label>Telefone</label>
-            <input  class="form-control"
-                    type="text" 
-                    name="telefone"
-                    value="@Model.telefone"/>
-        </div>
-
-          <div class="form-group">
-            <label>E-Mail</label>
-            <input  class="form-control"
-                    type="text" 
-                    name="email"
-                    value="@Model.email"/>
-        </div>
+        
 
           <div class="form-group">
             <label>Descrição do Problema</label>
@@ -57,7 +35,7 @@
         </div>
 
           <div class="form-group">
-            <label>Solução Data</label>
+            <label>Data Solução</label>
             <input  class="form-control"
                     type="date" 
                     name="datasolucao"
@@ -69,7 +47,7 @@
             <input  class="form-control"
                     type="time" 
                     name="horainicio"
-                    value="@Model.horainicio"/>
+                    value="@Model.horainicio" readonly/>
         </div>
 
           <div class="form-group">

@@ -1,0 +1,43 @@
+<div class="form-horizontal">
+    <form action="Edit" method="Post">
+
+
+            <div class="form-group">
+            <label>Id</label>
+            <input hidden class="form-control"
+                    type="text"
+                    name="id"
+                    value="@Model.id"/>
+                 </div>  
+
+          <div class="form-group">
+            <label>Nome Cliente</label>
+            <input  class="form-control"
+                    type="text"
+                    name="nomecliente"
+                    value="@Model.nomecliente"/>
+        </div>
+
+        <div class="form-group">
+            <label>Email do Cliente</label>
+            <input  class="form-control"
+                    type="text"
+                    name="email"
+                    value="@Model.email" />
+        </div>
+
+         <div class="form-group">
+            <label>Telefone do Cliente</label>
+            <input  class="form-control"
+                    type="text"
+                    name="telefone"
+                    value="@Model.telefone" />
+        </div>
+
+        
+
+        <input  class="btn btn-primary" 
+                type="submit" value="Salvar"/>
+
+    </form>
+</div>

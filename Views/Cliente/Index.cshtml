@@ -1,0 +1,30 @@
+</br></br>
+<a href="Cliente/Create" class="btn btn-primary">Novo Cliente</a>
+</br></br>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <!-- <th>Numero Chamado</th> -->
+                <th>Nome Cliente</th>
+                <th>Email</th>
+                <th>Telefone</th>
+            </tr>
+            </tr>
+        </thead>
+
+        @foreach(var item in Model)
+        {
+            <tr>   
+                <td>@item.nomecliente</td>
+                <td>@item.email</td>
+                <td>@item.telefone</td>
+
+                <td><a class="btn btn-danger" href="Cliente/Delete/@item.id">Delete</a> </td>
+                <td><a class="btn btn-primary" href="Cliente/Edit/@item.id">Editar</a> </td>
+            </tr>
+        }
+    </table>
+</div>

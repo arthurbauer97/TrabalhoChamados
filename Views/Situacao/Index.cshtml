@@ -1,0 +1,27 @@
+</br></br>
+<a href="Situacao/Create" class="btn btn-primary">Nova Situação</a>
+</br></br>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <!-- <th>Numero Chamado</th> -->
+                <th>Tipo Situacao</th>
+            
+            </tr>
+            </tr>
+        </thead>
+
+        @foreach(var item in Model)
+        {
+            <tr>   
+                <td>@item.tiposituacao</td>
+        
+                <td><a class="btn btn-danger" href="Situacao/Delete/@item.id">Delete</a> </td>
+                <td><a class="btn btn-primary" href="Situacao/Edit/@item.id">Editar</a> </td>
+            </tr>
+        }
+    </table>
+</div>

@@ -9,7 +9,12 @@ namespace TrabalhoChamados.Models
             : base(options)   
             {}
 
-            public DbSet<Chamados> Chamados {get;set;}
+            public DbSet<Chamado> Chamados {get;set;}
+
+            public DbSet<Cliente> Clientes {get; set;}
+
+             public DbSet<Situacao> Situacoes {get; set;}
+
     }
     
 }
