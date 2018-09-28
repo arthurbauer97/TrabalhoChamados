@@ -23,6 +23,6 @@ namespace TrabalhoChamados.Models
         public TimeSpan horafinal { get; set; }
         public TimeSpan duracao { get; set; }
         public Cliente cliente {get; set;}
-         public Situacao tiposituacao {get; set;}
+         public Situacao situacao {get; set;}
         }
     }

@@ -9,7 +9,7 @@ using TrabalhoChamados.Models;
 namespace TrabalhoChamados.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20180925033444_InitialMigrations")]
+    [Migration("20180926025754_InitialMigrations")]
     partial class InitialMigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,13 +38,13 @@ namespace TrabalhoChamados.Migrations
 
                     b.Property<TimeSpan>("horainicio");
 
-                    b.Property<int?>("tiposituacaoid");
+                    b.Property<int?>("situacaoid");
 
                     b.HasKey("id");
 
                     b.HasIndex("clienteid");
 
-                    b.HasIndex("tiposituacaoid");
+                    b.HasIndex("situacaoid");
 
                     b.ToTable("Chamados");
                 });
@@ -83,9 +83,9 @@ namespace TrabalhoChamados.Migrations
                         .WithMany()
                         .HasForeignKey("clienteid");
 
-                    b.HasOne("TrabalhoChamados.Models.Situacao", "tiposituacao")
+                    b.HasOne("TrabalhoChamados.Models.Situacao", "situacao")
                         .WithMany()
-                        .HasForeignKey("tiposituacaoid");
+                        .HasForeignKey("situacaoid");
                 });
 #pragma warning restore 612, 618
         }

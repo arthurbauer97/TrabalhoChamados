@@ -2,27 +2,32 @@
     <form action="Edit" method="Post">
 
 
+  
         <div class="form-group">
-            <label>Id</label>
-            <input hidden class="form-control"
-                    type="text"
-                    name="id"
-                    value="@Model.id" />
+            <label for="cliente.id">Cliente</label>
+
+            <input class="form-control" type="text" name="cliente.id" value="@Model.cliente.nomecliente " readonly>
+            <input hidden type="text" name="id" id="id" value="@Model.id"/>
         </div>
-      <div class="form-group">
-            <label>Nome Solicitante</label>
-            <input  class="form-control"
-                    type="text"
-                    name="nomesolicitante"
-                    value="@Model.nomesolicitante" />
+
+         <div class="row">
+            <div class="form-group col-md-6">
+                <label for="situacao.id">Situação</label>
+                <select class="form-control" name="situacao.id">
+                    @foreach(var situacao in @ViewBag.situacoes)
+                    {
+                        <!option value=@situacao.id selected="@(situacao.id == @Model.situacao.id)">@situacao.tiposituacao</!option>
+                    }
+                </select>
+            </div>
         </div>
 
         <div class="form-group">
-            <label>Data</label>
+            <label for="data">Data</label>
             <input  class="form-control"
-                    type="date" 
+                    type="text" 
                     name="data"
-                    value="@Model.data"/>
+                    value="@Model.data.ToString("dd/MM/yyyy")" readonly>
         </div>
         
 
@@ -37,9 +42,9 @@
           <div class="form-group">
             <label>Data Solução</label>
             <input  class="form-control"
-                    type="date" 
+                    type="text" 
                     name="datasolucao"
-                    value="@Model.datasolucao"/>
+                    value="@Model.datasolucao.ToString("dd/MM/yyyy")"/>
         </div>
 
           <div class="form-group">

@@ -32,12 +32,6 @@ namespace TrabalhoChamados.Controllers
             return RedirectToAction("index");
         }
         
-         public IActionResult Delete(int id)
-        {
-            _repository.Delete(id);
-            return RedirectToAction("Index");
-        }
-
         public IActionResult Edit(int id)
         {
             return View(_repository.GetById(id));

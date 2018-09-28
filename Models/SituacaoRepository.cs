@@ -14,7 +14,7 @@ namespace TrabalhoChamados.Models
         }
 
         public void Create(Situacao situacao){
-            dataContext.Add(situacao);
+            dataContext.Situacoes.Add(situacao);
             dataContext.SaveChanges();
         }
 
@@ -35,7 +35,7 @@ namespace TrabalhoChamados.Models
         }
         public void Delete(int id)
         {
-            dataContext.Remove(GetById(id));
+            dataContext.Situacoes.Remove(GetById(id));
             dataContext.SaveChanges();
         }
     }

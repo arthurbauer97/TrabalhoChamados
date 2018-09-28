@@ -8,6 +8,5 @@ namespace TrabalhoChamados.Models
         List<Situacao> GetAll();
         void Update(Situacao situacao);
         Situacao GetById(int id);
-        void Delete (int id);
     }
 }

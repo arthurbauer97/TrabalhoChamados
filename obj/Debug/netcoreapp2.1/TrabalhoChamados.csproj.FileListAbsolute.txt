@@ -14,6 +14,12 @@ C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\TrabalhoChamado
 C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\TrabalhoChamados.TagHelpers.input.cache
 C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\TrabalhoChamados.TagHelpers.output.cache
 C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\TrabalhoChamados.RazorCoreGenerate.cache
+C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Chamado\Create.g.cshtml.cs
+C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Chamado\Edit.g.cshtml.cs
+C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Chamado\Index.g.cshtml.cs
+C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Create.g.cshtml.cs
+C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Edit.g.cshtml.cs
+C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Index.g.cshtml.cs
 C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
@@ -29,9 +35,3 @@ C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\TrabalhoChamado
 C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\TrabalhoChamados.dll
 C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\TrabalhoChamados.pdb
 C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\TrabalhoChamados.csproj.CopyComplete
-C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Chamado\Create.g.cshtml.cs
-C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Chamado\Edit.g.cshtml.cs
-C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Chamado\Index.g.cshtml.cs
-C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Create.g.cshtml.cs
-C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Edit.g.cshtml.cs
-C:\Users\Arthur\Desktop\TrabalhoChamados\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Index.g.cshtml.cs

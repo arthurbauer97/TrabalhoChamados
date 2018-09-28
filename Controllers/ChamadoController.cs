@@ -50,10 +50,12 @@ namespace TrabalhoChamados.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
         public IActionResult Edit(int id)
         {
-            ViewBag.situacoes = _repositorySituacao.GetAll();
-            return View(_repositoryChamado.GetById(id));
+           var chamado = _repositoryChamado.GetById(id);
+           ViewBag.situacoes = _repositorySituacao.GetAll();
+            return View(chamado);
         }
 
         [HttpPost]

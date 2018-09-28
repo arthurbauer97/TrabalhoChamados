@@ -49,7 +49,7 @@ namespace TrabalhoChamados.Migrations
                     horafinal = table.Column<TimeSpan>(nullable: false),
                     duracao = table.Column<TimeSpan>(nullable: false),
                     clienteid = table.Column<int>(nullable: true),
-                    tiposituacaoid = table.Column<int>(nullable: true)
+                    situacaoid = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -61,8 +61,8 @@ namespace TrabalhoChamados.Migrations
                         principalColumn: "id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Chamados_Situacoes_tiposituacaoid",
-                        column: x => x.tiposituacaoid,
+                        name: "FK_Chamados_Situacoes_situacaoid",
+                        column: x => x.situacaoid,
                         principalTable: "Situacoes",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Restrict);
@@ -74,9 +74,9 @@ namespace TrabalhoChamados.Migrations
                 column: "clienteid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Chamados_tiposituacaoid",
+                name: "IX_Chamados_situacaoid",
                 table: "Chamados",
-                column: "tiposituacaoid");
+                column: "situacaoid");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
